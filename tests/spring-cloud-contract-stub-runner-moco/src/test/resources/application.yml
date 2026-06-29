@@ -1,0 +1,5 @@
+spring.cloud.contract.stubrunner:
+  idsToServiceIds:
+    fraudDetectionServerMoco: someNameThatShouldMapFraudDetectionServer
+server:
+  port: 0

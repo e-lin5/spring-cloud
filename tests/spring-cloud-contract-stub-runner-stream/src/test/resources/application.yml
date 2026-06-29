@@ -1,0 +1,18 @@
+spring.cloud.contract.stubrunner.repositoryRoot: classpath:m2repo/repository/
+spring.cloud.contract.stubrunner.ids: org.springframework.cloud.contract.verifier.stubs:streamService:0.0.1-SNAPSHOT:stubs
+spring.cloud.contract.stubrunner.stubs-mode: remote
+spring:
+  cloud:
+    stream:
+      bindings:
+        test1-in-0:
+          destination: returnBook
+        test1-out-0:
+          destination: outputToAssertBook
+    function:
+      definition: test1
+
+server:
+  port: 0
+
+debug: true
